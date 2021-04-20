@@ -7,5 +7,5 @@ def index(request, pagename):
     return HttpResponse(f'<h1>Welcome to the {pagename} </h1>')
 
 
-def page2(request, email):
-    return render(request, "sample.html", context={'email': email, 'location': 'Bangalore'})
+def page2(request, email, location):
+    return render(request, "sample.html", context={'email': email, 'location': location})
